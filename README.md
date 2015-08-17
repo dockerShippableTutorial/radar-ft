@@ -1,2 +1,2 @@
 # radar-ft
-Radar application Functional Testing micro service
+necessary env vars (in shippable.yml): WWW_URL and TOKEN
