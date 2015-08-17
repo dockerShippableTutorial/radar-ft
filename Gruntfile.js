@@ -2,7 +2,7 @@ require('xunit-file');
 
 module.exports = function (grunt) {
   grunt.initConfig({
-    simplemocha: {
+    'mocha-hack': {
       options: {
         globals: ['should'],
         timeout: 30000,
@@ -13,7 +13,6 @@ module.exports = function (grunt) {
       all: { src: ['./test.js'] }
     }
   });
-  grunt.loadNpmTasks('grunt-express-server');
-  grunt.loadNpmTasks('grunt-simple-mocha');
-  grunt.registerTask('default', ['express:test', 'simplemocha:all']);
+  grunt.loadNpmTasks('grunt-mocha-hack');
+  grunt.registerTask('default', [ 'mocha-hack:all']);
 };

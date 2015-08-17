@@ -24,7 +24,7 @@ describe('Has time', function() {
     .end(function(err, res) {
       (err === null).should.equal(true);
       res.statusCode.should.equal(200);
-      res.body.time.should.exist();
+      should.exist(res.body.time);
       done();
     });
   });
