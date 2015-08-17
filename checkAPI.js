@@ -16,7 +16,7 @@ request(url, function (err, res, body) {
 
   var jsonRes = JSON.parse(body);
   //Check whether API returns time
-  if(jsonRes.time) {
+  if (jsonRes.time) {
     //Test passed
     process.exit(0);
   } else {
